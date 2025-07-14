@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Order</title>
+  <link rel="stylesheet" href="handsome.css"> <!-- Link to the CSS file. -->
+</head>
+<body>
+  <div class="container">
+    <h1>Build Your Smoothie</h1>
+    <!-- This is the form for the smoothie. -->
+    <form id="smoothieForm">
+      <label for="size">Choose a size:</label>
+      <select id="size" name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="super duper large">Type 2 diabetes</option>
+      </select>
+
+      <!-- I was not going to hardcode the prices and calories, but did for the sake of the assignment to not complicate things and have prices shown even if javascript is not working. -->
+      <fieldset>
+        <legend>Choose ingredients:</legend>
+        <label><input type="checkbox" name="ingredients" value="banana"> Banana ($0.50, 90 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="strawberry"> Strawberry ($0.75, 30 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="mango"> Mango ($0.80, 60 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="blueberry"> Blueberry ($0.70, 40 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="pineapple"> Pineapple ($0.90, 50 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="kiwi"> Kiwi ($0.60, 42 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="peach"> Peach ($0.70, 40 kcal)</label>
+        <label><input type="checkbox" name="ingredients" value="raspberry"> Raspberry ($0.80, 30 kcal)</label>
+      </fieldset>
+      
+      <label for="base">Select the base:</label>
+      <select id="base" name="base">
+        <option value="milk">Milk ($0.50, 80 kcal)</option>
+        <option value="almond milk">Almond milk ($0.75, 30 kcal)</option>
+        <option value="soy milk">Soy milk ($1.00, 60 kcal)</option>
+        <option value="oat milk">Oat milk ($1.00, 90 kcal)</option>
+        <option value="coconut milk">Coconut milk ($1.00, 75 kcal)</option>
+        <option value="cashew milk">Cashew milk ($1.00, 70 kcal)</option>
+        <option value="rice milk">Rice milk ($1.00, 60 kcal)</option>
+        <option value="water">Water ($0.00, 0 kcal)</option>
+        <option value="yogurt">Yogurt ($1.00, 100 kcal)</option>
+        <option value="coffee">Coffee ($1.00, 5 kcal)</option>
+        <option value="tea">Tea ($0.50, 2 kcal)</option>
+      </select>
+
+      <p id="preview" style="font-weight: bold; margin-top: 10px;"></p> <!-- This is the preview that will be displayed. -->
+
+      <button type="submit">Order Smoothie</button> <!-- This is the button that will submit the form. -->
+
+      <div id="prepAnimation" style="font-size: 2rem; display: none; margin-top: 10px;"></div> <!-- This is the animation that will be displayed. -->
+      
+      <img id="smoothieImage" src="" alt="Smoothie Image" style="max-width: 200px; display: none; margin-top: 10px;" /> <!-- This is the image that will be displayed. -->
+      <div id="result" style="margin-top: 10px;"></div> <!-- This is where the result will be displayed. -->
+    </form>
+  </div>
+  <script src="hell.js"></script> <!-- Link to the JavaScript file. -->
+</body>
+</html>

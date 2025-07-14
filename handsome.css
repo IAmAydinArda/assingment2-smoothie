@@ -1,0 +1,106 @@
+/* General reset and base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This is the font family for the body. */
+  background: linear-gradient(to right, #f8f9fa, #e0f7fa); /* This is the linear gradient background color for the body. */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* This is the align items to center. */
+  justify-content: center; /* This is the justify content to center. */
+}
+
+/* Form styling */
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* This is the box shadow for the form. */
+}
+
+h1 {
+  font-size: 2.5rem; /* This is the font size for the h1. */
+  text-align: center; /* This is the text align for the h1. */
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); /* This is the linear gradient background color for the h1 to create a rainbow effect. */
+  background-clip: text; /* This is the background clip to make the text visible via clipping it out of the background. */
+  color: transparent; /* This makes the color of it transparrent so the background is visible behind the text. Had to jump hoops to get as simple rainbow thingy to work huh? */
+}
+
+label,
+legend {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+}
+
+select,
+fieldset,
+input[type="checkbox"] {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* A little background color change when hovered over. */
+}
+
+button:hover {
+  background-color: #218838; /* Here is the color it will change into. */
+}
+
+#preview {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#prepAnimation {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+#smoothieImage {
+  display: block;
+  margin: 15px auto 0;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+}
