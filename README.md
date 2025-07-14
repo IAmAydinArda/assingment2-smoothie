@@ -1,5 +1,7 @@
 # 🥤 Smoothie Order App
 
+## https://iamaydinarda.github.io/assingment2-smoothie/
+
 A simple and fun web application that lets users build and order custom smoothies! Built with HTML, CSS, and JavaScript.
 
 ## 🚀 Features
